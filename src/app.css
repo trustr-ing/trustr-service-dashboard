@@ -1,0 +1,104 @@
+/* TRUSTr Design System */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+	/* Iceberg-Dark base (default) */
+	--bg-dark: #0f1117;
+	--bg-surface: #161821;
+	--bg-elevated: #1c1e27;
+	--bg-card: #282a36;
+	--text-primary: #d2d4de;
+	--text-secondary: #c6c8d1;
+	--text-muted: #6b7089;
+	--accent: #84a0c6;
+	--accent-dim: #5d6db3;
+	--accent-glow: rgba(132, 160, 198, 0.15);
+	--border: #3d4455;
+	--border-light: #485163;
+	--tier-a: #b4be82;
+	--tier-b: #84a0c6;
+	--tier-c: #e2a478;
+	--tier-x: #e27878;
+	--positive: #b4be82;
+	--warning: #e9b189;
+	--snap-color: #a093c7;
+	--snap-dim: #b294bb;
+	--snap-glow: rgba(160, 147, 199, 0.15);
+	--pool-color: #89b8c2;
+	--pool-dim: #66a1b7;
+	--pool-glow: rgba(137, 184, 194, 0.12);
+	/* Plotly (used by scatter page) */
+	--plot-bg: #161821;
+	--plot-paper: #0f1117;
+	--plot-grid: #282a36;
+	--plot-zeroline: #3d4455;
+	--plot-font: #c6c8d1;
+	--plot-tick: #6b7089;
+	--plot-dim: #3d4455;
+}
+
+:root[data-theme="light"] {
+	/* Iceberg-Light */
+	--bg-dark: #e8e9ec;
+	--bg-surface: #f8fcfd;
+	--bg-elevated: #dde1e6;
+	--bg-card: #dcdfe7;
+	--text-primary: #161821;
+	--text-secondary: #33374c;
+	--text-muted: #6b7a8f;
+	--accent: #4271ae;
+	--accent-dim: #0a4cbe;
+	--accent-glow: rgba(66, 113, 174, 0.12);
+	--border: #c6c8d1;
+	--border-light: #9099ab;
+	--tier-a: #457c03;
+	--tier-b: #4271ae;
+	--tier-c: #cc7833;
+	--tier-x: #cc3850;
+	--positive: #457c03;
+	--warning: #be9117;
+	--snap-color: #8959a8;
+	--snap-dim: #7a63ee;
+	--snap-glow: rgba(137, 89, 168, 0.12);
+	--pool-color: #2c7088;
+	--pool-dim: #289999;
+	--pool-glow: rgba(44, 112, 136, 0.10);
+	--plot-bg: #f8fcfd;
+	--plot-paper: #e8e9ec;
+	--plot-grid: #dcdfe7;
+	--plot-zeroline: #c6c8d1;
+	--plot-font: #33374c;
+	--plot-tick: #6b7a8f;
+	--plot-dim: #c6c8d1;
+}
+
+html, body {
+	min-height: 100vh;
+	background: var(--bg-dark);
+	color: var(--text-primary);
+	font-family: 'JetBrains Mono', 'Fira Code', monospace;
+	font-size: 13px;
+}
+
+a {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--text-primary);
+}
+
+button {
+	font-family: inherit;
+	cursor: pointer;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* Smooth theme transition */
+html { transition: background-color 0.2s, color 0.2s; }
